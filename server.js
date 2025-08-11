@@ -26,8 +26,8 @@ app.use(cors({
 // Đường dẫn API
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/cart', require('./routes/cartRoutes'));
-// Thêm sau các dòng khác
 app.use('/api/products', require('./routes/productRoutes'));
+app.use('/api/orders', require('./routes/orderRoutes'));
 
 
 // Kết nối MongoDB
