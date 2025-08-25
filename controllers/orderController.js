@@ -8,7 +8,7 @@ exports.createOrder = async (req, res) => {
       customerInfo,
       items,
       subtotal,
-      shippingFee = 30000,
+      shippingFee = 0,
       discount = 0,
       total
     } = req.body;
